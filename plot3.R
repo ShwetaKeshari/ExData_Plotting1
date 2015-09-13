@@ -18,6 +18,5 @@ plot(power_data_subset2$datetime,power_data_subset2$Sub_metering_1, type= "l", y
 lines(power_data_subset2$datetime,power_data_subset2$Sub_metering_2,col="red")
 lines(power_data_subset2$datetime,power_data_subset2$Sub_metering_3,col="Blue")
 legend("topright",legend= c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), col= c("Black","red","blue" ))
-
-png(filename ="plot3.png",width = 480,height=480)
+dev.copy(png, file="plot3.png",width = 480,height=480)
 dev.off()

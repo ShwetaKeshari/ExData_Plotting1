@@ -23,7 +23,6 @@
 #Plot 1: 
 ## Aim is to plot a Histogram for Global Active power from two dates  namely  the dates 2007-02-01 and 2007-02-02
 
-setwd("C:/Users/Subrat/Desktop/ExData_Plotting1")
 
 getwd()
 # Reading the power data file. 
@@ -40,8 +39,11 @@ hist(power_data_subset$Global_active_power, xlab="Global Active Power (Kilowatts
 
 #Construct the plot and save it to a PNG file with a width of 480 pixels and a height of 480 pixels.
 
-png(filename="plot1.png",width = 480,height=480)
-
+dev.copy(png, file="plot1.png",width = 480,height=480)
 dev.off()
+
+
+
+
 
 

@@ -25,7 +25,7 @@ plot(power_data_subset2$datetime,power_data_subset2$Global_reactive_power,type="
 
 
 
-png(filename = "plot4.png",width = 480,height=480)
+dev.copy(png, file="plot4.png",width = 480,height=480)
 dev.off()
 
 
