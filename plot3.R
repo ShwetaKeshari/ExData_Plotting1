@@ -1,3 +1,5 @@
+
+getwd()
 # Reading the power data file. 
 power_data <- read.table("C:/DataforExploratory Analysis/household_power_consumption.txt", header=T, sep=";", na.strings="?")
 
